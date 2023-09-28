@@ -30,7 +30,7 @@ export class Newscom extends Component {
   
 
     };
-    document.title=`${this.title(this.props.category)} gossip-aunty`;
+    document.title=`${this.title(this.props.category)} News-land`;
   }
   async loadfunction()
   {
@@ -83,7 +83,7 @@ export class Newscom extends Component {
           dataLength={this.state.article.length}
           next={this.fetchMoreData}
           hasMore={this.state.article.length !==this.state.totalResults}
-          loader={<Spinner/>}   >
+             >
       
         <div className="row">
           {this.state.article.map((element) => {
